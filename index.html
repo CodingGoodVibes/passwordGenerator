@@ -1,0 +1,23 @@
+<html>
+    
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Generate a <span style="color:#10B981";>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <div class="slideContainer">
+        <input type="range" min="12" max="24" value="15" class="slider" id="mySlider" oninput="updateCount()">
+        <p>Length: <span id="lengthDisplay">15</span></p>
+        </div>
+        <button class = "buttonClass" onclick="generatePassword()">Generate passwords</button>
+        <div class="passwordFields">
+        <p class ="individualPasswords" onclick="copyPasswordOne()" id="passwordOne"></p>
+        <p class ="individualPasswords" onclick="copyPasswordTwo()" id="passwordTwo"></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
